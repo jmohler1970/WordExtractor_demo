@@ -1,0 +1,8 @@
+{
+    "dependencies":{
+        "wordextractor":"git://github.com/jmohler1970/WordExtractor.git"
+    },
+    "installPaths":{
+        "wordextractor":"wordextractor"
+    }
+}
