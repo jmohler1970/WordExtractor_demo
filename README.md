@@ -26,9 +26,25 @@ There are two main ideas that make this work
 Let's dive into some code
 
 
-## Recursive Text Extractor
+# Recursive Text Extractor
 
 Let's do some recursion. For those that don't know what recursion is, you must first understand recursion before you can understand recursion (sorry)
+
+The xml in a docx file is a nexted structure. At any give point in the structure, one of two things are going on. 
+
+1. Either you are at tag that controls how the subordinate tags work, OR
+2. You are at a tag with content.
+
+The tags with content are easy. Just extract the content from `.xmlText` and return it.
+
+The control and the suborinate ones are tougher to deal with.
+
+Control means that you are in Header, or a list, or bold, or italic, or something. So you have to use that knowledge to come up with the right additional tags
+
+Subordiante means you have to call the same function `ReadNode()` all over again. This allow you to get as deep as you need to get the content.
+
+
+# Let's do some code review
 
 
 
