@@ -1,6 +1,9 @@
 # WordExtractor_demo
-Demonstrates Word Extractor
+We are going to be extracting out HTML from a Word (`.docx`) file.
 
+`.docx` is an example of an **Open Document Format for Office Applications (ODF)** file. It is a ZIP of an XML document.
+
+By unzipping the file and locating the appropriate XML file, we can process the data an generate HTML
 
 # Usage
 
@@ -48,3 +51,10 @@ Subordiante means you have to call the same function `ReadNode()` all over again
 
 
 
+# Resources
+
+- https://en.wikipedia.org/wiki/OpenDocument
+
+- https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-u-z/cfzip.html
+
+- https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-t-z/xmlparse.html
